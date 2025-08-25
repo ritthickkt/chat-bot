@@ -10,7 +10,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   const apiKey = import.meta.env.VITE_API_KEY;
-  const genAI = new GoogleGenerativeAI(API-KEY);
+  const genAI = new GoogleGenerativeAI(apiKey);
   const handleAskQuestion = async (display) => {
 
     const userMessage = display;
